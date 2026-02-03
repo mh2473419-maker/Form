@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style type="text/css">
+    .container {
+      width: 1000px;
+      height: fit-content;
+      border: 4px solid black;
+      border-radius: 4px;
+      margin: 5px auto;
+      padding: 5px;
+      background-image: linear-gradient(to bottom, rgb(255, 106, 0), rgba(70, 128, 0, 0.901), rgba(0, 140, 255, 0.92));
+      justify-content: center;
+      align-content: center;
+    }
+
+    .form {
+      margin: 2px auto;
+      width: 600px;
+      height: fit-content;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: justify;
+      box-sizing: border-box;
+    }
+
+    .form label {
+      margin: 40px auto;
+      text-align: justify;
+    }
+
+    .form input {
+      width: fit-content;
+      text-align: center;
+      color: black;
+      margin: 20px auto;
+    }
+
+    h1 {
+      text-align: center;
+      text-shadow: 2px 2px 2px white;
+    }
+
+    .commonhr {
+      border: 2px solid black;
+      margin: 2px;
+      width: 100%;
+    }
+
+    .footer {
+      width: fit-content;
+      margin: 2px auto;
+    }
+
+    .footer ul li {
+      list-style-type: none;
+      float: left;
+      margin: 5px;
+    }
+
+    .footer ul li a {
+      text-decoration: none;
+    }
+
+    .footer ul li a:hover {
+      color: black;
+      text-decoration: underline;
+      text-shadow: 2px 2px 2px rgb(204, 0, 255);
+    }
+
+    .developer {
+      font-style: italic;
+      margin: 5px auto;
+    }
+
+    .image {
+      width: 120px;
+      height: 120px;
+      float: left;
+      margin: 5px auto;
+      padding: 5px;
+    }
+
+    .button {
+      margin: 5px auto;
+      padding: 5px;
+      text-align: center;
+
+    }
+
+    .button input {
+      font-size: 15px;
+      color: antiquewhite;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- main part start here -->
+  <section class="container">
+    <header>
+      <img class="image" src="1744710253654.jpg">
+      <h1>Efootball Tournament-2026</h1>
+    </header>
+    <hr class="commonhr">
+    <main>
+      <form class="form">
+        <label for="Username">Username:</label>
+        <input type="text" class="Username" id="Username" placeholder="input valid username" required>
+        <label for="Email">Email:</label>
+        <input type="email" class="Email" id="Email" placeholder="input valid Email" required>
+        <label for="Password">Password:</label>
+        <input type="password" class="password" id="password" placeholder="input valid password" required
+          pattern="[a-zA-Z0-9]+">
+        <label for="date of birth">Date Of Birth:</label>
+        <input type="date" class="date of birth" id="date of birth" required>
+        <label for="photo">Photo:</label>
+        <input type="file" class="photo" id="photo" required>
+        <label for="Device">Device:</label>
+        <input type="checkbox" class="Device" id="Device" required value="Android">Android
+        <input type="checkbox" class="Device" id="Device" required value="Ios">Ios
+        <label for="Location">Location:</label>
+        <select name="Location">
+          <option value="Dhaka">Dhaka</option>
+          <option value="Dhaka">Chittagong</option>
+          <option value="Dhaka">Rajshahi</option>
+          <option value="Dhaka">Khulna</option>
+          <option value="Dhaka">Rangpur</option>
+          <option value="Dhaka">Cumilla</option>
+          <option value="Dhaka">Mymensingh</option>
+        </select>
+        <div class="button">
+          <input type="submit" value="Register">
+          <input type="reset" value="Clear">
+        </div>
+      </form>
+    </main>
+    <hr class="commonhr">
+    <footer class="footer">
+      <ul>
+        <li><a href="https://facebook.com/mh2473419" target="_blank">Facebook</a></li>
+        <li><a href="mailto:mh2473419" target="_blank">Gmail</a></li>
+        <li><a href="tel:+8801738531566" target="_blank">Telephone</a></li>
+      </ul>
+      <p class="developer">Developed By &copy;M.H. Maruf Hasan</p>
+    </footer>
+    <!-- all will be ended here -->
+  </section>
+</body>
+
+</html>
